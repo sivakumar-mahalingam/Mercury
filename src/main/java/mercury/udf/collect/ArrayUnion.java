@@ -53,4 +53,3 @@ public class ArrayUnion extends GenericUDF {
         return "ArrayUnion";
     }
 }
-
