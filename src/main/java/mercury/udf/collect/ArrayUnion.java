@@ -15,7 +15,7 @@ import java.util.*;
  * UDF for combining multiple lists together
  */
 
-@Description(name = "union", value = "_FUNC_(a,b) - Returns a combined list of two or more lists")
+@Description(name = "arry_union", value = "_FUNC_(a,b) - Returns a combined list of two or more lists")
 public class ArrayUnion extends GenericUDF {
     private StandardListObjectInspector standardListObjectInspector;
 
@@ -45,26 +45,11 @@ public class ArrayUnion extends GenericUDF {
             mergedList.addAll(list);
         }
 
-        HashSet<Object> set = new HashSet<>(mergedList);
-        mergedList.clear();
-        mergedList.addAll(set);
-
-        // Sort the ArrayList using a custom Comparator
-        Collections.sort(mergedList, new Comparator<Object>() {
-            @Override
-            public int compare(Object o1, Object o2) {
-                String s1 = o1.toString();
-                String s2 = o2.toString();
-                return s1.compareTo(s2);
-            }
-        });
-
         return mergedList;
     }
 
     @Override
     public String getDisplayString(String[] strings) {
-        return "MergeArraysUDF";
+        return "ArrayUnions";
     }
 }
-
