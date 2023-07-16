@@ -16,7 +16,7 @@ import java.util.List;
  * UDF for getting common elements from multiple lists
  */
 
-@Description(name = "intersection", value = "_FUNC_(a,b) - Returns a list which have common elements from two or more lists")
+@Description(name = "array_intersection", value = "_FUNC_(a,b) - Returns a list which have common elements from two or more lists")
 public class ArrayIntersection extends GenericUDF {
     private StandardListObjectInspector standardListObjectInspector;
 
@@ -54,6 +54,6 @@ public class ArrayIntersection extends GenericUDF {
 
     @Override
     public String getDisplayString(String[] strings) {
-        return "IntersectionArraysUDF";
+        return "ArrayIntersection";
     }
 }
