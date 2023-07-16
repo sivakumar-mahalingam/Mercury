@@ -50,6 +50,6 @@ public class ArrayUnion extends GenericUDF {
 
     @Override
     public String getDisplayString(String[] strings) {
-        return "ArrayUnions";
+        return "ArrayUnion";
     }
 }
