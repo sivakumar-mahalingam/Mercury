@@ -41,7 +41,7 @@ public class JaccardSimilarity extends GenericUDF {
         int intersectionSize = 0;
         int unionSize = 0;
 
-        HashSet<Object> set = new HashSet<>();
+        HashSet<Object> hashSet = new HashSet<>();
 
         for (Object element : list1) {
             if (list2.contains(element)) {
@@ -49,10 +49,10 @@ public class JaccardSimilarity extends GenericUDF {
             }
         }
 
-        set.addAll(list1);
-        set.addAll(list2);
+        hashSet.addAll(list1);
+        hashSet.addAll(list2);
 
-        unionSize = set.size();
+        unionSize = hashSet.size();
 
         double jaccardSimilarity = (double) intersectionSize / (double) unionSize;
 

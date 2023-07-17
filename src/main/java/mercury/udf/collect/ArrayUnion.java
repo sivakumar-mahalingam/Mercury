@@ -40,11 +40,13 @@ public class ArrayUnion extends GenericUDF {
     @Override
     public Object evaluate(DeferredObject[] arguments) throws HiveException {
         List<Object> mergedList = new ArrayList<>();
+        HashSet<Object> hashSet = new HashSet<>();
 
         for (DeferredObject argument : arguments) {
             Object array = argument.get();
             List<?> list = (List<?>) ObjectInspectorUtils.copyToStandardObject(array, standardListObjectInspector);
-            mergedList.addAll(list);
+            hashSet.addAll(list);
+            mergedList = new ArrayList<>(hashSet);
         }
 
         return mergedList;
