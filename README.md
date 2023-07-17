@@ -2,7 +2,7 @@
 
 # ⚗️Mercury
 
-Mercury is a collection of UDF's for Hive.
+Mercury is a collection of UDFs for Hive.
 
 | Category   | Description                                 |
 |------------|---------------------------------------------|
