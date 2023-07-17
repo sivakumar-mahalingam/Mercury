@@ -17,7 +17,7 @@ import java.util.*;
  * @author: Sivakumar Mahalingam
  */
 
-@Description(name = "arry_union", value = "_FUNC_(a,b) - Returns a combined list of two or more lists")
+@Description(name = "array_union", value = "_FUNC_(a,b) - Returns a combined list of two or more lists")
 public class ArrayUnion extends GenericUDF {
     private StandardListObjectInspector standardListObjectInspector;
 
