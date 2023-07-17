@@ -10,8 +10,10 @@ import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectIn
 import java.util.HashSet;
 import java.util.List;
 
-/*
+/**
  * UDF for getting jaccard similarity coefficient
+ *
+ * @author: Sivakumar Mahalingam
  */
 
 @Description(name = "jaccard_similarity", value = "_FUNC_(a,b) - Returns jaccard similarity coefficient of two lists")

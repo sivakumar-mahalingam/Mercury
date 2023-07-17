@@ -12,8 +12,10 @@ import org.apache.hadoop.hive.serde2.objectinspector.StandardListObjectInspector
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  * UDF for getting common elements from multiple lists
+ *
+ * @author: Sivakumar Mahalingam
  */
 
 @Description(name = "array_intersection", value = "_FUNC_(a,b) - Returns a list which have common elements from two or more lists")

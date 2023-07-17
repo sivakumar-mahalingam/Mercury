@@ -11,8 +11,10 @@ import org.apache.hadoop.hive.serde2.objectinspector.StandardListObjectInspector
 
 import java.util.*;
 
-/*
+/**
  * UDF for combining multiple lists together
+ *
+ * @author: Sivakumar Mahalingam
  */
 
 @Description(name = "arry_union", value = "_FUNC_(a,b) - Returns a combined list of two or more lists")
