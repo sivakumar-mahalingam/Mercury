@@ -1,3 +1,5 @@
+[![Java CI with Maven](https://github.com/sivakumar-mahalingam/Mercury/actions/workflows/maven-build-test.yml/badge.svg)](https://github.com/sivakumar-mahalingam/Mercury/actions/workflows/maven-build-test.yml)
+
 # ⚗️Mercury
 
 Mercury is a collection of UDF's for Hive.
