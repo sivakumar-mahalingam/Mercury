@@ -25,7 +25,7 @@ public class ArrayIntersection extends GenericUDF {
     @Override
     public ObjectInspector initialize(ObjectInspector[] arguments) throws UDFArgumentException {
         if (arguments.length < 2) {
-            throw new UDFArgumentException("IntersectionArraysUDF requires at least 2 arguments");
+            throw new UDFArgumentException("ArrayIntersection requires at least 2 arguments");
         }
 
         for (int i = 0; i < arguments.length; i++) {

@@ -24,7 +24,7 @@ public class ArrayUnion extends GenericUDF {
     @Override
     public ObjectInspector initialize(ObjectInspector[] arguments) throws UDFArgumentException {
         if (arguments.length < 2) {
-            throw new UDFArgumentException("MergeArraysUDF requires at least 2 arguments");
+            throw new UDFArgumentException("ArrayUnion requires at least 2 arguments");
         }
 
         for (int i = 0; i < arguments.length; i++) {

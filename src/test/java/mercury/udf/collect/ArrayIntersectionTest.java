@@ -45,7 +45,7 @@ public class ArrayIntersectionTest {
     }
 
     /*
-     * {1, 2} ∪ {1, 2} = {1, 2}
+     * {1, 2} ∩ {1, 2} = {1, 2}
      */
     @Test
     public void testEvaluateWithSameElements() throws HiveException {
@@ -68,7 +68,7 @@ public class ArrayIntersectionTest {
     }
 
     /*
-     * {1, 2} ∪ {"A", "B"} = Error
+     * {1, 2} ∩ {"A", "B"} = {}
      */
     @Test
     public void testEvaluateWithDifferentTypes() throws HiveException {
@@ -89,7 +89,7 @@ public class ArrayIntersectionTest {
     }
 
     /*
-     * {1, 2} ∪ {2, 3} = {1, 2, 3}
+     * {1, 2} ∩ {2, 3} = {2}
      */
     @Test
     public void testEvaluateWithTwoArrays() throws HiveException {
@@ -111,7 +111,7 @@ public class ArrayIntersectionTest {
     }
 
     /*
-     * {1, 2} ∪ {2, 5} u {3, 4} = {1, 2, 3, 4, 5}
+     * {1, 2} ∩ {2, 5} ∩ {3, 4} = {2, 4}
      */
     @Test
     public void testEvaluateWithThreeArrays() throws HiveException {
