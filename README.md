@@ -8,3 +8,16 @@ Mercury is a collection of UDFs for Hive.
 |------------|---------------------------------------------|
 | collect    | Deals with collections (Array, Map, Struct) |
 | statistics | Deals with statistical operations           |
+
+.  
+├── ...   
+├── collect  
+│ ├── ArrayIntersection  
+│ ├── ArraySort  
+│ ├── ArraySubtract  
+│ ├── ArrayUnion  
+│ └── ...  
+├── statistcs  
+│ ├── JaccardSimilarity  
+│ └── ...   
+└── ...  
