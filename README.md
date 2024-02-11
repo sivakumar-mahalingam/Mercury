@@ -2,7 +2,8 @@
 
 # ⚗️Mercury
 
-Mercury is a collection of UDFs for Hive.
+Mercury is a collection of UDFs for Hive. 
+There are two types of Hive UDFs: simple and generic. While simple UDFs are easier to construct, they are less flexible and generally less efficient.
 
 | Category   | Description                                 |
 |------------|---------------------------------------------|
